@@ -23,7 +23,9 @@ module.exports = {
       try{
         const token = req.headers.token;
         const decoded =jwt.verify(token,"SECRETKEY");
-        req.userData = decoded;
+      if(req.userData = decoded){
+
+      };
         next();
       }catch(err){
         return res.status(401).send({
