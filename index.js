@@ -10,9 +10,9 @@ var connection = mysql.createConnection({
 
 connection.connect((error)=>{
      if(error){
-       console.log("Error while connection to DB")
+       console.log("Hai I am in Dallas")
      }else{
-      console.log("Successfully connected to the Database")
+      console.log("Successfully 45678")
      }
 })
 
